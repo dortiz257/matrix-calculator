@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Matrix Calculator</title>
+        <link href="matrix_face.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="matrix.js"></script>
+        <div id="header"> <h id="header_text"> Matrix Calculator </h></div>
+        <h1 id="operation">Operations</h1>
+        <div id="operation_buttons">
+            <button onclick = "saveInput1(); saveInput2(); splitMatrix1(); splitMatrix2(); matrixAdd(); printSum();">Addition</button>
+            <button onclick = "saveInput1(); saveInput2(); splitMatrix1(); splitMatrix2(); matrixProd(); printProduct();">Multiplication</button>
+            <button onclick = "saveInput1(); saveInput2(); splitMatrix1(); splitMatrix2(); matrixSub(); printDiff();">Subtraction</button>
+            <!-- <button disabled>reduced row echelon form (RREF)</button>
+            <button disabled>determinate (DET)</button> -->
+        </div>
+
+            <div id="matrix1" class="matrix"></div>
+            <div id="matrix2" class="matrix"></div>
+            <div id="matrixResult" class="matrix"></div>
+            <h id="equal_symbol">=</h>
+            <h id="add_symbol">+</h>
+            <h id="sub_symbol">-</h>
+            <h id="multiply_symbol">x</h>
+
+
+        <h1 id="size">Dimensions</h1>
+        <select id="number_select">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <!-- <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option> -->
+        </select>
+        <h2 id="x">x<h2>
+        <select id="number_select2">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <!-- <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option> -->
+       </select>
+        <select id="number_select3">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <!-- <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option> -->
+        </select>
+        <h2 id="x2">x</h2>
+        <select id="number_select4">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <!-- <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option> -->
+        </select>
+
+        <!--<button onclick="saveInput1(), saveInput2()">save</button>-->
+
+        <p id="hidden"><span id="input1"></span></p>
+        <p id="hidden"><span id="input2"></span></p>
+
+        <p id="hidden"><span id="split_array1"></span></p>
+        <p id="hidden"><span id="split_array2"></span></p>
+
+        <p id="hidden">result: <span id="prod_result"></span>
+        <p id="hidden">result: <span id="add_result"></span>
+        <p id="hidden">result: <span id="sub_result"></span>
+        
+        <div class="popup">
+            <span class="popuptext" id="myPopup">
+                <div id="error_header"><h id="error_header_txt">Calculation Error</h></div>
+                <h id="error_txt"> Matrix sizes are not compatible. </h>
+                <img id="sign" src="sign.png">
+                <button id="exit_button" onclick="togglePopup()">exit</button>
+            </span>
+            <div class="overlay" onclick="togglePopup()"></div>
+        </div>
+        
+    </body>
+</html>

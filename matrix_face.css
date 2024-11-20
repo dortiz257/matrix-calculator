@@ -1,0 +1,344 @@
+body, html{overflow-y:scroll;width:100%;margin:0}
+
+body {background-color:#cccccc;}
+
+@font-face {
+    font-family:vt323;
+    src: url(VT323-Regular.ttf);
+  }
+
+#operation {
+    position:absolute;
+    top:90px;
+    left:275px;
+    font-family:vt323;
+    color:black;
+    font-size:35px;
+}
+#operation_buttons * {
+    margin-top:60px;
+    margin-left:10px;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color: #cccccc;
+    font-family:vt323;
+    height:45px;
+    font-size:20px;
+}
+#operation_buttons {
+    position:absolute;
+    left:170px;
+}
+#operation_buttons *:active {
+    margin-top:60px;
+    margin-left:10px;
+    border:solid;
+    border-width:3px;
+    border-top-color:black;
+    border-left-color:black;
+    border-right-color:white;
+    border-bottom-color:white;
+    background-color: #cccccc;
+    font-family:vt323;
+    height:45px;
+    font-size:20px;
+}
+
+#size {
+    position:absolute;
+    left:868px;
+    top:90px;
+    font-family:vt323;
+    color:black;
+    font-size:35px;
+}
+#x {
+    position:absolute;
+    left:930px;
+    top:130px;
+    font-family:vt323;
+    font-size:30px;
+}
+#x2 {
+    position:absolute;
+    left:930px;
+    top:180px;
+    font-family:vt323;
+    font-size:30px;
+}
+#number_select {
+    position:absolute;
+    left:860px;
+    top:160px;
+    font-family:vt323;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color: #cccccc;
+    width:55px;
+    height:30px;
+    font-size:20px;
+}
+#number_select2 {
+    position:absolute;
+    left:960px;
+    top:160px;
+    font-family:vt323;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color: #cccccc;
+    width:55px;
+    height:30px;
+    font-size:20px;
+}
+
+#number_select3 {
+    position:absolute;
+    left:860px;
+    top:210px;
+    font-family:vt323;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color: #cccccc;
+    width:55px;
+    height:30px;
+    font-size:20px;
+}
+#number_select4 {
+    position:absolute;
+    left:960px;
+    top:210px;
+    font-family:vt323;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color: #cccccc;
+    width:55px;
+    height:30px;
+    font-size:20px;
+}
+
+#matrix1 {
+    position:absolute;
+    top:290px;
+    left:80px;
+    border:solid;
+    border-width:3px;
+    border-top-color:black;
+    border-left-color:black;
+    border-right-color:white;
+    border-bottom-color:white;
+}
+#matrix2{
+    position:absolute;
+    top:290px;
+    left:510px;
+    border:solid;
+    border-width:3px;
+    border-top-color:black;
+    border-left-color:black;
+    border-right-color:white;
+    border-bottom-color:white;
+}
+
+.matrix-input1 {
+    width:50px;
+    height:50px;
+    font-size:xx-large;
+    font-family:vt323;
+}
+.matrix-input2 {
+    width:50px;
+    height:50px;
+    font-size:xx-large;
+    font-family:vt323;
+}
+.matrix-cell {
+    width:50px;
+    height:50px;
+    font-size:xx-large;
+    border:solid;
+    font-family:vt323;
+}
+
+#input1t {
+    position:absolute;
+    top:290px;
+    left:890px;
+}
+#input2t {
+    position:absolute;
+    top:350px;
+    left:890px;
+}
+
+#hidden {
+    color:#cccccc;
+}
+
+#matrixResult{
+    position:absolute;
+    top:290px;
+    left:940px;
+    border:solid;
+    border-width:3px;
+    border-top-color:black;
+    border-left-color:black;
+    border-right-color:white;
+    border-bottom-color:white;
+}
+
+#header {
+    margin:auto;
+    width:1340px;
+    height:68px;
+    margin-top:25px;
+    background-color:#0d55c8;
+    border:solid;
+    border-width:3px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+}
+
+#header_text {
+    position:absolute;
+    font-family:vt323;
+    color:white;
+    left:130px;
+    top:40px;
+    font-size:45px;
+}
+
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width:100%;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    width:320px;
+    height:190px;
+    border:solid;
+    border-width:4px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:black;
+    border-bottom-color:black;
+    background-color:#cccccc;
+    z-index: 2;
+    left:553px;
+    top:-100px;
+  }
+
+.popup .popuptext::after {
+    content: "";
+  }
+  .popup .show {
+    visibility: visible;
+  }
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    display: none;
+  }
+
+  #error_header {
+    position:absolute;
+    top:0;
+    width:320px;
+    height:20px;
+    background-color:#0d55c8;
+  }
+
+  #error_header_txt {
+    position:absolute;
+    font-family:vt323;
+    font-size:20px;
+    width:190px;
+    left:5px;
+    bottom:.3px;
+    color:white;
+    letter-spacing:.2px;
+  }
+
+  #error_txt {
+    position:absolute;
+    font-family:vt323;
+    font-size:30px;
+    width:190px;
+    left:15px;
+    top:50px;
+    color:black;
+    letter-spacing:.2px;
+  }
+
+  #sign {
+    position:absolute;
+    right:13px;
+    top:20px;
+    width:150px;
+  }
+  
+  #equal_symbol {
+    position:absolute;
+    font-size:110px;
+    right:507px;
+    top:295px;
+    color:black;
+  }
+
+  #add_symbol {
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:100px;
+    left:435px;
+    top:295px;
+    color:black;
+    visibility: hidden;
+  }
+  #sub_symbol {
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:100px;
+    left:445px;
+    top:295px;
+    color:black;
+    visibility: hidden;
+  }
+  #multiply_symbol {
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:100px;
+    left:445px;
+    top:295px;
+    color:black;
+    visibility: hidden;
+  }
